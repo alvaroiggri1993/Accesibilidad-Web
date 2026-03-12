@@ -34,8 +34,6 @@ conformidad.
 -   CSS Grid
 -   Media Queries (Responsive Design)
 
-No se han utilizado frameworks ni librerías externas.
-
 ------------------------------------------------------------------------
 
 ## Estructura del proyecto
