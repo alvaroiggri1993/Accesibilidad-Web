@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name=keywords" content="html5 , js, javascript, css, webapp, aplicacion web, pagina web">
+	<meta name="keywords" content="html5, js, javascript, css, webapp, aplicacion web, pagina web">
 	<title>Accesibilidad Web</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+	<a href="#intro" class="skip-link">Saltar al contenido</a>
 
 	<header>
 		<h1>Accesibilidad Web</h1>
@@ -30,6 +32,7 @@
 					<li><a href="#principios">Principios WCAG</a></li>
 					<li><a href="#versiones">Versiones WCAG</a></li>
 					<li><a href="#herramientas">Herramientas</a></li>
+					<li><a href="#ejemplos">Ejemplos de accesibilidad</a></li>
 				</ul>
 
 			</nav>
@@ -99,8 +102,7 @@
 							<h3>Operable</h3>
 							<p>
 								La interfaz debe ser usable mediante teclado, ratón o
-								dispositivos de asistencia, permitiendo que todos los usuarios
-								puedan interactuar con el sitio.
+								dispositivos de asistencia.
 							</p>
 						</article>
 
@@ -108,7 +110,6 @@
 							<h3>Comprensible</h3>
 							<p>
 								El contenido debe ser claro, consistente y fácil de entender.
-								La navegación debe ser lógica y predecible.
 							</p>
 						</article>
 
@@ -116,7 +117,7 @@
 							<h3>Robusto</h3>
 							<p>
 								El contenido debe funcionar correctamente en diferentes
-								navegadores, sistemas operativos y tecnologías de asistencia.
+								navegadores y tecnologías de asistencia.
 							</p>
 						</article>
 
@@ -164,7 +165,7 @@
 
 					<p>
 						Existen diferentes herramientas que permiten analizar la accesibilidad
-						de un sitio web y detectar problemas que puedan afectar a los usuarios.
+						de un sitio web y detectar problemas.
 					</p>
 
 					<ul>
@@ -176,6 +177,92 @@
 
 				</section>
 
+				<section id="ejemplos" class="pergamino">
+
+					<h2>Ejemplos de accesibilidad</h2>
+
+					<p>
+						A continuación se muestran ejemplos de cómo adaptar una web para
+						personas con distintas discapacidades.
+					</p>
+
+					<div class="grid-principios">
+
+						<article>
+
+							<h3>Usuarios con discapacidad visual</h3>
+
+							<img src="lector-pantalla.jpg"
+								alt="Persona utilizando un lector de pantalla en un ordenador">
+
+							<p>
+								Las imágenes deben incluir texto alternativo para que
+								los lectores de pantalla puedan describirlas.
+							</p>
+
+							<button aria-label="Escuchar explicación sobre accesibilidad visual">
+								Escuchar descripción
+							</button>
+
+						</article>
+
+						<article>
+
+							<h3>Usuarios con discapacidad auditiva</h3>
+
+							<video controls width="100%">
+								<source src="ejemplo-video.mp4" type="video/mp4">
+								Tu navegador no soporta video.
+							</video>
+
+							<p>
+								Los vídeos deben incluir subtítulos o una transcripción
+								para que las personas sordas puedan entender el contenido.
+							</p>
+
+						</article>
+
+						<article>
+
+							<h3>Usuarios con dificultades motoras</h3>
+
+							<p>
+								La web debe poder utilizarse mediante teclado y tener
+								elementos interactivos grandes.
+							</p>
+
+							<button class="boton-accesible">
+								Botón accesible grande
+							</button>
+
+						</article>
+
+						<article>
+
+							<h3>Usuarios con dificultades cognitivas</h3>
+
+							<p>
+								Las personas con dificultades cognitivas se benefician de
+								textos simples y una estructura clara.
+							</p>
+
+							<ul>
+								<li>Lenguaje sencillo</li>
+								<li>Información organizada</li>
+								<li>Frases cortas</li>
+								<li>Navegación clara</li>
+							</ul>
+
+							<button class="boton-accesible">
+								Leer explicación sencilla
+							</button>
+
+						</article>
+
+					</div>
+
+				</section>
+
 			</main>
 
 			<aside>
@@ -183,18 +270,17 @@
 				<h3>Dato interesante</h3>
 
 				<p>
-					Se estima que más de mil millones de personas en el mundo viven con
-					algún tipo de discapacidad. Diseñar sitios accesibles permite que
-					millones de usuarios puedan acceder a la información digital.
+					Más de mil millones de personas en el mundo viven con algún tipo
+					de discapacidad.
 				</p>
 
 				<h3>Buenas prácticas</h3>
 
 				<ul>
-					<li>Usar etiquetas HTML semánticas</li>
-					<li>Incluir texto alternativo en imágenes</li>
-					<li>Utilizar buen contraste de colores</li>
-					<li>Permitir navegación mediante teclado</li>
+					<li>Usar HTML semántico</li>
+					<li>Texto alternativo en imágenes</li>
+					<li>Buen contraste</li>
+					<li>Navegación por teclado</li>
 				</ul>
 
 			</aside>
